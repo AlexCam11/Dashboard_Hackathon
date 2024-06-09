@@ -27,17 +27,17 @@ class Footer extends Component {
             <ul className="footer-menu">
               <li>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Home
+                  Inicio
                 </a>
               </li>
               <li>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Company
+                  Organización
                 </a>
               </li>
               <li>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Portfolio
+                  Portafolio
                 </a>
               </li>
               <li>
@@ -48,8 +48,7 @@ class Footer extends Component {
             </ul>
             <p className="copyright text-center">
               © {new Date().getFullYear()}{" "}
-              <a href="http://www.creative-tim.com">Creative Tim</a>, made with
-              love for a better web
+              <a href="http://www.creative-tim.com">AgTech</a>
             </p>
           </nav>
         </Container>

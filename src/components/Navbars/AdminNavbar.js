@@ -76,8 +76,8 @@ function Header() {
                 onClick={(e) => e.preventDefault()}
                 className="m-0"
               >
-                <i className="nc-icon nc-palette"></i>
-                <span className="d-lg-none ml-1">Dashboard</span>
+                <i className="nc-icon nc-grid-45"></i>
+                <span className="d-lg-none ml-1">Inicio</span>
               </Nav.Link>
             </Nav.Item>
             <Dropdown as={Nav.Item}>
@@ -88,40 +88,34 @@ function Header() {
                 variant="default"
                 className="m-0"
               >
-                <i className="nc-icon nc-planet"></i>
+                <i className="nc-icon nc-bell-55"></i>
                 <span className="notification">5</span>
-                <span className="d-lg-none ml-1">Notification</span>
+                <span className="d-lg-none ml-1">Notificaciones</span>
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Notification 1
+                  Notificación 1
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Notification 2
+                  Notificación 2
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Notification 3
+                  Notificación 3
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Notification 4
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Another notification
+                  Notificación 4
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -132,7 +126,7 @@ function Header() {
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="nc-icon nc-zoom-split"></i>
-                <span className="d-lg-block"> Search</span>
+                <span className="d-lg-block"> Buscar</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -143,7 +137,7 @@ function Header() {
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >
-                <span className="no-icon">Account</span>
+                <span className="no-icon">Cuenta</span>
               </Nav.Link>
             </Nav.Item>
             <Dropdown as={Nav.Item}>
@@ -156,39 +150,39 @@ function Header() {
                 variant="default"
                 className="m-0"
               >
-                <span className="no-icon">Dropdown</span>
+                <span className="no-icon">Menú</span>
               </Dropdown.Toggle>
               <Dropdown.Menu aria-labelledby="navbarDropdownMenuLink">
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Action
+                  Opción 1
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Another action
+                  Opción 2
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Something
+                  Opción 3
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Something else here
+                  Opción 4
                 </Dropdown.Item>
                 <div className="divider"></div>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Separated link
+                  Opción 5
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -198,7 +192,7 @@ function Header() {
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >
-                <span className="no-icon">Log out</span>
+                <span className="no-icon">Cerrar Sesión</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>
