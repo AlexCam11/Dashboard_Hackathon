@@ -62,7 +62,7 @@ function User() {
                   <Row>
                     <Col className="pr-1" md="6">
                       <Form.Group>
-                        <label>Primer Nombre</label>
+                        <label>Nombres</label>
                         <Form.Control
                           defaultValue="Mike"
                           placeholder="Ingresa tú nombre"
@@ -72,7 +72,7 @@ function User() {
                     </Col>
                     <Col className="pl-1" md="6">
                       <Form.Group>
-                        <label>Apellido</label>
+                        <label>Apellidos</label>
                         <Form.Control
                           defaultValue="Andrew"
                           placeholder="Ingresa tú apellido"
@@ -132,7 +132,7 @@ function User() {
                           cols="80"
                           defaultValue="¡Hola! Soy Juan, un desarrollador de software, 
                                         especializándome en tecnologías como React!"
-                          placeholder="Ingresa un breve descripción sobre tí"
+                          placeholder="Ingresa una breve descripción sobre tí"
                           rows="4"
                           as="textarea"
                         ></Form.Control>
