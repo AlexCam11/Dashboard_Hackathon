@@ -42,7 +42,7 @@ const dashboardRoutes = [
   },
   {
     path: "/user",
-    name: "User Profile",
+    name: "Perfil de Usuario",
     icon: "nc-icon nc-circle-09",
     component: UserProfile,
     layout: "/admin"

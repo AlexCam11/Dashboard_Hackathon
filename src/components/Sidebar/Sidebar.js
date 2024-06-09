@@ -20,7 +20,7 @@ import { useLocation, NavLink } from "react-router-dom";
 
 import { Nav } from "react-bootstrap";
 
-import logo from "assets/img/reactlogo.png";
+import logo from "assets/img/reactlogo.png"; //para cambiar logo
 
 function Sidebar({ color, image, routes }) {
   const location = useLocation();

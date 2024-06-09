@@ -21,36 +21,36 @@ function User() {
           <Col md="8">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Edit Profile</Card.Title>
+                <Card.Title as="h4">Editar Perfil</Card.Title>
               </Card.Header>
               <Card.Body>
                 <Form>
                   <Row>
                     <Col className="pr-1" md="5">
                       <Form.Group>
-                        <label>Company (disabled)</label>
+                        <label>Empresa (deshabilitada)</label>
                         <Form.Control
-                          defaultValue="Creative Code Inc."
+                          defaultValue="Talento TECH"
                           disabled
-                          placeholder="Company"
+                          placeholder="Empresa"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="px-1" md="3">
                       <Form.Group>
-                        <label>Username</label>
+                        <label>Nombre de usuario</label>
                         <Form.Control
-                          defaultValue="michael23"
-                          placeholder="Username"
+                          defaultValue="Admin"
+                          placeholder="Nombre de usuario"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="pl-1" md="4">
                       <Form.Group>
-                        <label htmlFor="exampleInputEmail1">
-                          Email address
+                        <label htmlFor="example@gmail.com">
+                          Correo electrónico
                         </label>
                         <Form.Control
                           placeholder="Email"
@@ -62,20 +62,20 @@ function User() {
                   <Row>
                     <Col className="pr-1" md="6">
                       <Form.Group>
-                        <label>First Name</label>
+                        <label>Nombres</label>
                         <Form.Control
                           defaultValue="Mike"
-                          placeholder="Company"
+                          placeholder="Ingresa tú nombre"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="pl-1" md="6">
                       <Form.Group>
-                        <label>Last Name</label>
+                        <label>Apellidos</label>
                         <Form.Control
                           defaultValue="Andrew"
-                          placeholder="Last Name"
+                          placeholder="Ingresa tú apellido"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
@@ -84,10 +84,10 @@ function User() {
                   <Row>
                     <Col md="12">
                       <Form.Group>
-                        <label>Address</label>
+                        <label>Dirección</label>
                         <Form.Control
-                          defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                          placeholder="Home Address"
+                          defaultValue="Calle 20 No. 10-20"
+                          placeholder="Ingresa tú dirección"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
@@ -96,29 +96,29 @@ function User() {
                   <Row>
                     <Col className="pr-1" md="4">
                       <Form.Group>
-                        <label>City</label>
+                        <label>Ciudad</label>
                         <Form.Control
-                          defaultValue="Mike"
-                          placeholder="City"
+                          defaultValue="Pasto"
+                          placeholder="Ingresa tú ciudad"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="px-1" md="4">
                       <Form.Group>
-                        <label>Country</label>
+                        <label>País</label>
                         <Form.Control
-                          defaultValue="Andrew"
-                          placeholder="Country"
+                          defaultValue="Colombia"
+                          placeholder="Ingresa tú país"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="pl-1" md="4">
                       <Form.Group>
-                        <label>Postal Code</label>
+                        <label>Código postal</label>
                         <Form.Control
-                          placeholder="ZIP Code"
+                          placeholder="Ingresa el código postal"
                           type="number"
                         ></Form.Control>
                       </Form.Group>
@@ -127,12 +127,12 @@ function User() {
                   <Row>
                     <Col md="12">
                       <Form.Group>
-                        <label>About Me</label>
+                        <label>Acerca de mí</label>
                         <Form.Control
                           cols="80"
-                          defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                          that two seat Lambo."
-                          placeholder="Here can be your description"
+                          defaultValue="¡Hola! Soy Juan, un desarrollador de software, 
+                                        especializándome en tecnologías como React!"
+                          placeholder="Ingresa una breve descripción sobre tí"
                           rows="4"
                           as="textarea"
                         ></Form.Control>
@@ -144,7 +144,7 @@ function User() {
                     type="submit"
                     variant="info"
                   >
-                    Update Profile
+                    Actualizar Perfil
                   </Button>
                   <div className="clearfix"></div>
                 </Form>
@@ -172,13 +172,21 @@ function User() {
                   <p className="description">michael24</p>
                 </div>
                 <p className="description text-center">
-                  "Lamborghini Mercy <br></br>
-                  Your chick she so thirsty <br></br>
-                  I'm in that two seat Lambo"
+                  "Desarrollador de software, <br></br>
+                  especializándome en tecnologías como React." 
+                  
                 </p>
               </Card.Body>
               <hr></hr>
               <div className="button-container mr-auto ml-auto">
+                <Button
+                  className="btn-simple btn-icon"
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                  variant="link"
+                >
+                  <i className="fab fa-github-square"></i>
+                </Button>
                 <Button
                   className="btn-simple btn-icon"
                   href="#pablo"
@@ -201,7 +209,7 @@ function User() {
                   onClick={(e) => e.preventDefault()}
                   variant="link"
                 >
-                  <i className="fab fa-google-plus-square"></i>
+                  <i className="fab fa-instagram-square"></i>
                 </Button>
               </div>
             </Card>
