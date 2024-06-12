@@ -27,13 +27,13 @@ function Dashboard() {
             <Row>
               <Col xs="5">
                 <div className="icon-big text-center icon-warning">
-                  <i className="nc-icon nc-chart text-warning"></i>
+                  <i className="nc-icon nc-bag text-warning"></i>
                 </div>
               </Col>
               <Col xs="7">
-                <div className="numbers">
-                  <p className="card-category">Número</p>
-                  <Card.Title as="h4">150GB</Card.Title>
+                <div className="contratos">
+                  <p className="card-category">Contratos Activos</p>
+                  <Card.Title as="h4">3</Card.Title>
                 </div>
               </Col>
             </Row>
@@ -53,11 +53,11 @@ function Dashboard() {
             <Row>
               <Col xs="5">
                 <div className="icon-big text-center icon-warning">
-                  <i className="nc-icon nc-light-3 text-success"></i>
+                  <i className="nc-icon nc-money-coins text-success"></i>
                 </div>
               </Col>
               <Col xs="7">
-                <div className="numbers">
+                <div className="ingresos">
                   <p className="card-category">Ingresos</p>
                   <Card.Title as="h4">$ 100'600.345</Card.Title>
                 </div>
@@ -79,12 +79,12 @@ function Dashboard() {
             <Row>
               <Col xs="5">
                 <div className="icon-big text-center icon-warning">
-                  <i className="nc-icon nc-vector text-danger"></i>
+                  <i className="nc-icon nc-tag-content text-danger"></i>
                 </div>
               </Col>
               <Col xs="7">
-                <div className="numbers">
-                  <p className="card-category">Errores</p>
+                <div className="ofertas">
+                  <p className="card-category">Ofertas Disponibles</p>
                   <Card.Title as="h4">23</Card.Title>
                 </div>
               </Col>
@@ -109,8 +109,8 @@ function Dashboard() {
                 </div>
               </Col>
               <Col xs="7">
-                <div className="numbers">
-                  <p className="card-category">Seguidores</p>
+                <div className="conexiones">
+                  <p className="card-category">Conexiones</p>
                   <Card.Title as="h4">+45K</Card.Title>
                 </div>
               </Col>
@@ -130,7 +130,7 @@ function Dashboard() {
       <Col md="8">
         <Card>
           <Card.Header>
-            <Card.Title as="h4">Comportamiento de Usuarios</Card.Title>
+            <Card.Title as="h4">Comportamiento del Mercado</Card.Title>
             <p className="card-category">Desempeño de 24 horas</p>
           </Card.Header>
           <Card.Body>
@@ -138,14 +138,14 @@ function Dashboard() {
               <ChartistGraph
                 data={{
                   labels: [
-                    "9:00AM",
-                    "12:00AM",
-                    "3:00PM",
-                    "6:00PM",
-                    "9:00PM",
-                    "12:00PM",
-                    "3:00AM",
-                    "6:00AM",
+                    "Enero",
+                    "Febrero",
+                    "Marzo",
+                    "Abril",
+                    "Mayo",
+                    "Junio",
+                    "Julio",
+                    "Agosto",
                   ],
                   series: [
                     [287, 385, 490, 492, 554, 586, 698, 695],
@@ -188,9 +188,9 @@ function Dashboard() {
           <Card.Footer>
             <div className="legend">
               <i className="fas fa-circle text-info"></i>
-              Abierto <i className="fas fa-circle text-danger"></i>
-              Clic <i className="fas fa-circle text-warning"></i>
-              Segundo Clic
+              Producto 1 <i className="fas fa-circle text-danger"></i>
+              Producto 2 <i className="fas fa-circle text-warning"></i>
+              Producto 3
             </div>
             <hr></hr>
             <div className="stats">
@@ -203,8 +203,8 @@ function Dashboard() {
       <Col md="4">
         <Card>
           <Card.Header>
-            <Card.Title as="h4">Estadísticas de Email</Card.Title>
-            <p className="card-category">Rendimiento de la Última Campaña</p>
+            <Card.Title as="h4">Estadísticas del Mercado</Card.Title>
+            <p className="card-category">Rendimiento del último mes</p>
           </Card.Header>
           <Card.Body>
             <div className="ct-chart ct-perfect-fourth" id="chartPreferences">
@@ -218,9 +218,9 @@ function Dashboard() {
             </div>
             <div className="legend">
               <i className="fas fa-circle text-info"></i>
-              Abierto <i className="fas fa-circle text-danger"></i>
-              Rebotado <i className="fas fa-circle text-warning"></i>
-              Cancelado
+              Producto 1 <i className="fas fa-circle text-danger"></i>
+              Producto 2 <i className="fas fa-circle text-warning"></i>
+              Producto 3
             </div>
             <hr></hr>
             <div className="stats">
@@ -329,7 +329,7 @@ function Dashboard() {
   <Card className="card-tasks">
     <Card.Header>
       <Card.Title as="h4">Tareas</Card.Title>
-      <p className="card-category">Desarrollo Backend</p>
+      <p className="card-category">Desarrollo de agenda</p>
     </Card.Header>
     <Card.Body>
       <div className="table-full-width">
@@ -348,7 +348,7 @@ function Dashboard() {
                 </Form.Check>
               </td>
               <td>
-                Firmar contrato para "¿De qué tienen miedo los organizadores de conferencias?"
+                Firmar contrato
               </td>
               <td className="td-actions text-right">
                 <OverlayTrigger
@@ -395,7 +395,7 @@ function Dashboard() {
                 </Form.Check>
               </td>
               <td>
-                ¿Líneas de la gran literatura rusa? ¿O correos electrónicos de mi jefe?
+                Revisar correos eléctronicos
               </td>
               <td className="td-actions text-right">
                 <OverlayTrigger
@@ -442,7 +442,7 @@ function Dashboard() {
                 </Form.Check>
               </td>
               <td>
-                Inundado: Un año después, evaluando lo que se perdió y lo que se encontró cuando una lluvia devastadora arrasó el metro de Detroit
+                Revisar inventario
               </td>
               <td className="td-actions text-right">
                 <OverlayTrigger
@@ -488,7 +488,7 @@ function Dashboard() {
                 </Form.Check>
               </td>
               <td>
-                Crear 4 experiencias de usuario invisibles que nunca supiste
+                Revisar contratos
               </td>
               <td className="td-actions text-right">
                 <OverlayTrigger
@@ -533,7 +533,7 @@ function Dashboard() {
                   </Form.Check.Label>
                 </Form.Check>
               </td>
-              <td>Leer "Seguir hace que Medium sea mejor"</td>
+              <td>Leer Documentación</td>
               <td className="td-actions text-right">
                 <OverlayTrigger
                   overlay={
@@ -578,7 +578,7 @@ function Dashboard() {
                   </Form.Check.Label>
                 </Form.Check>
               </td>
-              <td>Dejar de seguir a 5 enemigos en Twitter</td>
+              <td>Otra tarea</td>
               <td className="td-actions text-right">
                 <OverlayTrigger
                   overlay={

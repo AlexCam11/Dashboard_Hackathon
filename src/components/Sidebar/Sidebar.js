@@ -20,7 +20,7 @@ import { useLocation, NavLink } from "react-router-dom";
 
 import { Nav } from "react-bootstrap";
 
-import logo from "assets/img/reactlogo.png"; //para cambiar logo
+import logo from "assets/img/ABTechlogo.png"; //para cambiar logo
 
 function Sidebar({ color, image, routes }) {
   const location = useLocation();
@@ -42,11 +42,11 @@ function Sidebar({ color, image, routes }) {
             className="simple-text logo-mini mx-1"
           >
             <div className="logo-img">
-              <img src={require("assets/img/reactlogo.png")} alt="..." />
+              <img src={require("assets/img/ABTechlogo.png")} alt="..." />
             </div>
           </a>
           <a className="simple-text" href="http://www.creative-tim.com">
-            Creative Tim
+            AB Tech
           </a>
         </div>
         <Nav>

@@ -174,8 +174,22 @@ function User() {
                 <p className="description text-center">
                   "Desarrollador de software, <br></br>
                   especializándome en tecnologías como React." 
-                  
                 </p>
+                  <Card className="text-center">
+                    <Row className="justify-content-center">
+                      <Col xs="10">
+                        <div className="icon-big text-center icon-warning">
+                          <i className="nc-icon nc-money-coins text-warning"></i>
+                        </div>
+                      </Col>
+                      <Col xs="10">
+                        <div className="credito">
+                          <p className="card-category">CRÉDITO</p>
+                            <Card.Title as="h4">APTO</Card.Title>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Card>
               </Card.Body>
               <hr></hr>
               <div className="button-container mr-auto ml-auto">
