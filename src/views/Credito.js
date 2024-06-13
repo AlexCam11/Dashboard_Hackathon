@@ -14,9 +14,9 @@ function SimuCredito() {
     age: "25",
     personalIncome: "45000",
     jobSeniority: "2",
-    loanAmount: "4500",
+    loanAmount: "49000",
     loanIncomePercentage: "14",
-    tasaInteres: "0.1",
+    tasaInteres: "10",
     creditHistoryLength: "2",
     loanPurpose: "negocios",
     loanType: "negocios",
@@ -36,7 +36,7 @@ function SimuCredito() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.creditHistory === "1") {
+    if (+formData.tasaInteres < 10 || +formData.loanAmount >= 50000) {
       setModalMessage("No apto para el préstamo debido a un historial de crédito malo.");
     } else {
       setModalMessage("Apto para el préstamo.");
@@ -54,49 +54,11 @@ function SimuCredito() {
             </Card.Header>
             <Card.Body>
               <Form onSubmit={handleSubmit}>
+                
                 <Row>
-                  <Col md="6">
+                <Col md="6">
                     <Form.Group>
-                      <label>Edad</label>
-                      <Form.Control
-                        name="age"
-                        value={formData.age}
-                        onChange={handleChange}
-                        placeholder="Ingrese su edad"
-                        type="number"
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Ingreso Personal</label>
-                      <Form.Control
-                        name="personalIncome"
-                        value={formData.personalIncome}
-                        onChange={handleChange}
-                        placeholder="Ingrese su ingreso personal"
-                        type="number"
-                      />
-                    </Form.Group>
-                  </Col>
-                </Row>
-
-                <Row>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Antigüedad Laboral</label>
-                      <Form.Control
-                        name="jobSeniority"
-                        value={formData.jobSeniority}
-                        onChange={handleChange}
-                        placeholder="Ingrese su antigüedad laboral (en años)"
-                        type="number"
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Monto del Préstamo</label>
+                      <label>Monto del Préstamo (USD)</label>
                       <Form.Control
                         name="loanAmount"
                         value={formData.loanAmount}
@@ -106,12 +68,9 @@ function SimuCredito() {
                       />
                     </Form.Group>
                   </Col>
-                </Row>
-
-                <Row>
                   <Col md="6">
                     <Form.Group>
-                      <label>Tasa de Interés del Préstamo</label>
+                      <label>Tasa de Interés del Préstamo (% E.A.)</label>
                       <Form.Control
                         name="tasaInteres"
                         value={formData.tasaInteres}
@@ -121,109 +80,9 @@ function SimuCredito() {
                       />
                     </Form.Group>
                   </Col>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Porcentaje de Ingreso del Préstamo</label>
-                      <Form.Control
-                        name="loanIncomePercentage"
-                        value={formData.loanIncomePercentage}
-                        onChange={handleChange}
-                        placeholder="Ingrese el porcentaje de su ingreso destinado al préstamo"
-                        type="number"
-                      />
-                    </Form.Group>
-                  </Col>
                 </Row>
 
-                <Row>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Longitud de Historial de Crédito</label>
-                      <Form.Control
-                        name="creditHistoryLength"
-                        value={formData.creditHistoryLength}
-                        onChange={handleChange}
-                        placeholder="Ingrese la longitud de su historial de crédito (en años)"
-                        type="number"
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Propósito del Préstamo</label>
-                      <Form.Control
-                        as="select"
-                        name="loanPurpose"
-                        value={formData.loanPurpose}
-                        onChange={handleChange}
-                      >
-                        <option value="" disabled>
-                          Seleccione...
-                        </option>
-                        <option value="0">Negocios</option>
-                        <option value="1">Educación</option>
-                      </Form.Control>
-                    </Form.Group>
-                  </Col>
-                </Row>
 
-                <Row>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Tipo de Préstamo</label>
-                      <Form.Control
-                        as="select"
-                        name="loanType"
-                        value={formData.loanType}
-                        onChange={handleChange}
-                      >
-                        <option value="" disabled>
-                          Seleccione...
-                        </option>
-                        <option value="0">Negocios</option>
-                        <option value="1">Educación</option>
-                      </Form.Control>
-                    </Form.Group>
-                  </Col>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Grado del Préstamo</label>
-                      <Form.Control
-                        as="select"
-                        name="loanGrade"
-                        value={formData.loanGrade}
-                        onChange={handleChange}
-                      >
-                        <option value="" disabled>
-                          Seleccione...
-                        </option>
-                        <option value="0">Grado A</option>
-                        <option value="1">Grado B</option>
-                        <option value="2">Grado C</option>
-                      </Form.Control>
-                    </Form.Group>
-                  </Col>
-                </Row>
-
-                <Row>
-                  <Col md="6">
-                    <Form.Group>
-                      <label>Historial de Crédito</label>
-                      <Form.Control
-                        as="select"
-                        name="creditHistory"
-                        value={formData.creditHistory}
-                        onChange={handleChange}
-                      >
-                        <option value="" disabled>
-                          Seleccione...
-                        </option>
-                        <option value="0">Bueno</option>
-                        <option value="1">Malo</option>
-                      </Form.Control>
-                    </Form.Group>
-                  </Col>
-                </Row>
                 <Button
                   className="btn-fill pull-right"
                   type="submit"

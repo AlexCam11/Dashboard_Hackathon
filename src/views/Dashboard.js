@@ -204,7 +204,7 @@ function Dashboard() {
       <Col md="4">
         <Card>
           <Card.Header>
-            <Card.Title as="h4">Estadísticas del Mercado</Card.Title>
+            <Card.Title as="h4">Ingresos por contrato</Card.Title>
             <p className="card-category">Rendimiento del último mes</p>
           </Card.Header>
           <Card.Body>
@@ -219,9 +219,9 @@ function Dashboard() {
             </div>
             <div className="legend">
               <i className="fas fa-circle text-info"></i>
-              Producto 1 <i className="fas fa-circle text-danger"></i>
-              Producto 2 <i className="fas fa-circle text-warning"></i>
-              Producto 3
+              Contrato 1 <i className="fas fa-circle text-danger"></i>
+              Contrato 2 <i className="fas fa-circle text-warning"></i>
+              Contrato 3
             </div>
             <hr></hr>
             <div className="stats">
@@ -236,7 +236,7 @@ function Dashboard() {
       <Col md="6">
         <Card>
           <Card.Header>
-            <Card.Title as="h4">Ventas de 2024</Card.Title>
+            <Card.Title as="h4">Estadisticas de Ingresos</Card.Title>
             <p className="card-category">Todos los productos incluyendo impuestos</p>
           </Card.Header>
           <Card.Body>
@@ -329,7 +329,7 @@ function Dashboard() {
           <Col md="6">
   <Card className="card-tasks">
     <Card.Header>
-      <Card.Title as="h4">Tareas</Card.Title>
+      <Card.Title as="h4">Tareas Pendientes</Card.Title>
       <p className="card-category">Desarrollo de agenda</p>
     </Card.Header>
     <Card.Body>
