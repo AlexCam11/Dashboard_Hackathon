@@ -48,7 +48,7 @@ const dashboardRoutes = [
   },
   {
     path: "/maps",
-    name: "Maps",
+    name: "Mapa",
     icon: "nc-icon nc-pin-3",
     component: Maps,
     layout: "/admin"

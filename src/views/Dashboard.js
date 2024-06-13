@@ -235,7 +235,7 @@ function Dashboard() {
       <Col md="6">
         <Card>
           <Card.Header>
-            <Card.Title as="h4">Ventas de 2017</Card.Title>
+            <Card.Title as="h4">Ventas de 2024</Card.Title>
             <p className="card-category">Todos los productos incluyendo impuestos</p>
           </Card.Header>
           <Card.Body>
@@ -314,8 +314,8 @@ function Dashboard() {
           <Card.Footer>
             <div className="legend">
               <i className="fas fa-circle text-info"></i>
-              Tesla Model S <i className="fas fa-circle text-danger"></i>
-              BMW Serie 5
+              Año 2023 <i className="fas fa-circle text-danger"></i>
+              Año 2024
             </div>
             <hr></hr>
             <div className="stats">
