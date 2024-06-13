@@ -221,7 +221,7 @@ function User() {
               </div>
               <Card.Body>
                 <div className="author">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a href="#" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
                       className="avatar border-gray"
@@ -256,7 +256,7 @@ function User() {
               <div className="button-container mr-auto ml-auto">
                 <Button
                   className="btn-simple btn-icon"
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                   variant="link"
                 >
@@ -264,7 +264,7 @@ function User() {
                 </Button>
                 <Button
                   className="btn-simple btn-icon"
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                   variant="link"
                 >
@@ -272,7 +272,7 @@ function User() {
                 </Button>
                 <Button
                   className="btn-simple btn-icon"
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                   variant="link"
                 >
@@ -280,7 +280,7 @@ function User() {
                 </Button>
                 <Button
                   className="btn-simple btn-icon"
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                   variant="link"
                 >

@@ -10,13 +10,14 @@ const ProductosDashboard = () => {
     { id: 5, nombre: 'Cebada', precio: 80000, pais: 'Colombia', region: 'Nariño', municipio: 'Ilés' },
     { id: 6, nombre: 'Maíz', precio: 78615, pais: 'Colombia', region: 'Nariño', municipio: 'Consaca' }
   ]);
-
+  const [nextId, setNextId] = useState(7);
   const [showModal, setShowModal] = useState(false);
   const [currentProducto, setCurrentProducto] = useState(null);
 
   const handleAddProducto = (producto) => {
-    const nuevoProducto = { ...producto, id: productos.length + 1 };
+    const nuevoProducto = { ...producto, id: nextId };
     setProductos([...productos, nuevoProducto]);
+    setNextId(nextId + 1);
   };
 
   const handleEditProducto = (id, productoActualizado) => {
@@ -26,18 +27,10 @@ const ProductosDashboard = () => {
     setProductos(nuevosProductos);
   };
 
-  const actualizarIDs = (productos) => {
-    return productos.map((producto, index) => ({
-      ...producto,
-      id: index + 1
-    }));
-  };
-
   const handleDeleteProducto = (id) => {
     const nuevosProductos = productos.filter(producto => producto.id !== id);
-    setProductos(actualizarIDs(nuevosProductos));
+    setProductos(nuevosProductos);
   };
-
   return (
     <div className="table-full-width">
       <Table className="table-hover table-striped">
