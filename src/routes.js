@@ -17,12 +17,12 @@
 */
 import Dashboard from "views/Dashboard.js";
 import UserProfile from "views/UserProfile.js";
-import TableList from "views/TableList.js";
+import Productos from "views/TableList.js";
 import Typography from "views/Typography.js";
-import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
+import SimuCredito from "views/Credito.js";
 
 const dashboardRoutes = [
   {
@@ -43,7 +43,14 @@ const dashboardRoutes = [
     path: "/table",
     name: "Productos",
     icon: "nc-icon nc-app",
-    component: TableList,
+    component: Productos,
+    layout: "/admin"
+  },
+  {
+    path: "/credito",
+    name: "SimuCredito",
+    icon: "nc-icon nc-money-coins",
+    component: SimuCredito,
     layout: "/admin"
   },
   {

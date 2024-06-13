@@ -14,7 +14,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function TableList() {
+function Productos() {
   return (
     <>
       <Container fluid>
@@ -35,4 +35,4 @@ function TableList() {
   );
 }
 
-export default TableList;
+export default Productos;

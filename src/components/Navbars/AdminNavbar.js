@@ -72,7 +72,7 @@ function Header() {
             <Nav.Item>
               <Nav.Link
                 data-toggle="dropdown"
-                href="#pablo"
+                href="#"
                 onClick={(e) => e.preventDefault()}
                 className="m-0"
               >
@@ -94,25 +94,25 @@ function Header() {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Notificación 1
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Notificación 2
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Notificación 3
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Notificación 4
@@ -122,7 +122,7 @@ function Header() {
             <Nav.Item>
               <Nav.Link
                 className="m-0"
-                href="#pablo"
+                href="#"
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="nc-icon nc-zoom-split"></i>
@@ -134,7 +134,7 @@ function Header() {
             <Nav.Item>
               <Nav.Link
                 className="m-0"
-                href="#pablo"
+                href="#"
                 onClick={(e) => e.preventDefault()}
               >
                 <span className="no-icon">Cuenta</span>
@@ -154,32 +154,32 @@ function Header() {
               </Dropdown.Toggle>
               <Dropdown.Menu aria-labelledby="navbarDropdownMenuLink">
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Opción 1
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Opción 2
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Opción 3
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Opción 4
                 </Dropdown.Item>
                 <div className="divider"></div>
                 <Dropdown.Item
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                 >
                   Opción 5
@@ -189,7 +189,7 @@ function Header() {
             <Nav.Item>
               <Nav.Link
                 className="m-0"
-                href="#pablo"
+                href="#"
                 onClick={(e) => e.preventDefault()}
               >
                 <span className="no-icon">Cerrar Sesión</span>
