@@ -158,34 +158,7 @@ function FixedPlugin({
               <img alt="..." src={sideBarImage4}></img>
             </a>
           </li>
-          <li className="button-container">
-            <div>
-              <Button
-                block
-                className="btn-fill"
-                href="http://www.creative-tim.com/product/light-bootstrap-dashboard-react"
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="info"
-              >
-                Más información!
-              </Button>
-            </div>
-          </li>
-          <li className="button-container">
-            <div>
-              <Button
-                block
-                className="btn-fill"
-                href="http://www.creative-tim.com/product/light-bootstrap-dashboard-react"
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="default"
-              >
-                Enviar mensaje.
-              </Button>
-            </div>
-          </li>
+          
           <li className="header-title" id="sharrreTitle">
             Gracias por preferirnos!
           </li>

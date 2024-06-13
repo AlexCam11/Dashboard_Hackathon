@@ -45,7 +45,7 @@ function Sidebar({ color, image, routes }) {
               <img src={require("assets/img/ABTechlogo.png")} alt="..." />
             </div>
           </a>
-          <a className="simple-text" href="http://www.creative-tim.com">
+          <a className="simple-text" href="#">
             AB Tech
           </a>
         </div>
