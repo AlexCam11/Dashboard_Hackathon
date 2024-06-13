@@ -60,7 +60,7 @@ function FixedPlugin({
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <li className="adjustments-line d-flex align-items-center justify-content-between">
-            <p>Background Image</p>
+            <p>Imágen de fondo</p>
             <Form.Check
               type="switch"
               id="custom-switch-1-image"
@@ -69,12 +69,17 @@ function FixedPlugin({
             />
           </li>
           <li className="adjustments-line mt-3">
-            <p>Filters</p>
+            <p>Filtros</p>
             <div className="pull-right">
               <Badge
                 variant="secondary"
                 className={color === "black" ? "active" : ""}
                 onClick={() => setColor("black")}
+              ></Badge>
+              <Badge
+                variant="white"
+                className={color === "white" ? "active" : ""}
+                onClick={() => setColor("white")}
               ></Badge>
               <Badge
                 variant="azure"
@@ -104,7 +109,7 @@ function FixedPlugin({
             </div>
             <div className="clearfix"></div>
           </li>
-          <li className="header-title">Sidebar Images</li>
+          <li className="header-title">Galeria de imágenes</li>
           <li className={image === sideBarImage1 ? "active" : ""}>
             <a
               className="img-holder switch-trigger d-block"
@@ -163,7 +168,7 @@ function FixedPlugin({
                 target="_blank"
                 variant="info"
               >
-                Download, it's free!
+                Más información!
               </Button>
             </div>
           </li>
@@ -177,29 +182,12 @@ function FixedPlugin({
                 target="_blank"
                 variant="default"
               >
-                Checkout docs.
-              </Button>
-            </div>
-          </li>
-          <li className="header-title pro-title text-center">
-            Want more components?
-          </li>
-          <li className="button-container">
-            <div>
-              <Button
-                block
-                className="btn-fill"
-                href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react"
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="primary"
-              >
-                Get The PRO Version!
+                Enviar mensaje.
               </Button>
             </div>
           </li>
           <li className="header-title" id="sharrreTitle">
-            Thank you for sharing!
+            Gracias por preferirnos!
           </li>
           <li className="button-container mb-4">
             <Button
@@ -207,14 +195,14 @@ function FixedPlugin({
               id="twitter"
               variant="twitter"
             >
-              <i className="fab fa-twitter"></i>· 256
+              <i className="fab fa-facebook"></i>· 256
             </Button>
             <Button
               className="btn-social btn-outline btn-round sharrre"
               id="facebook"
               variant="facebook"
             >
-              <i className="fab fa-facebook-square"></i>· 426
+              <i className="fab fa-instagram-square"></i>· 426
             </Button>
           </li>
         </Dropdown.Menu>
