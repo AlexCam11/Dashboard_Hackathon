@@ -140,7 +140,7 @@ function Header() {
                   className="mr-sm-2"
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  style={{ width: "400px", height: "30px", marginTop: "15px"}}
+                  style={{ width: "200px", height: "30px", marginTop: "15px"}}
                 />
                 <Button variant="outline-success" type="submit"style={{ height: "30px", lineHeight: "0.9", marginTop: "15px" }}>
                   <i className="nc-icon nc-zoom-split"style={{marginTop: "0px" }}></i>
