@@ -1,15 +1,12 @@
 import React, { useState } from "react";
-
 import {
-  Badge,
   Button,
   Card,
   Form,
-  Navbar,
-  Nav,
   Container,
   Row,
   Col,
+  Modal,
 } from "react-bootstrap";
 
 function SimuCredito() {
@@ -21,11 +18,16 @@ function SimuCredito() {
     loanIncomePercentage: "14",
     tasaInteres: "0.1",
     creditHistoryLength: "2",
-    loanPurpose: "educacion",
-    loanType: "educacion",
+    loanPurpose: "negocios",
+    loanType: "negocios",
     loanGrade: "grado a",
     creditHistory: "bueno",
   });
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+
+  const handleClose = () => setShowModal(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +36,12 @@ function SimuCredito() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Enviar datos
+    if (formData.creditHistory === "1") {
+      setModalMessage("No apto para el préstamo debido a un historial de crédito malo.");
+    } else {
+      setModalMessage("Apto para el préstamo.");
+    }
+    setShowModal(true);
   };
 
   return (
@@ -154,6 +161,7 @@ function SimuCredito() {
                           Seleccione...
                         </option>
                         <option value="0">Negocios</option>
+                        <option value="1">Educación</option>
                       </Form.Control>
                     </Form.Group>
                   </Col>
@@ -163,7 +171,6 @@ function SimuCredito() {
                   <Col md="6">
                     <Form.Group>
                       <label>Tipo de Préstamo</label>
-
                       <Form.Control
                         as="select"
                         name="loanType"
@@ -174,6 +181,7 @@ function SimuCredito() {
                           Seleccione...
                         </option>
                         <option value="0">Negocios</option>
+                        <option value="1">Educación</option>
                       </Form.Control>
                     </Form.Group>
                   </Col>
@@ -229,6 +237,18 @@ function SimuCredito() {
           </Card>
         </Col>
       </Row>
+
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Resultado de Simulación</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{modalMessage}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cerrar
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
   );
 }
