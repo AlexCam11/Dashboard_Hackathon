@@ -236,23 +236,6 @@ function User() {
                 <p className="description text-center">
                   {profile.aboutMe}
                 </p>
-                <Card className="text-center p-2" style={{ maxWidth: "200px", maxHeight: "100px" }}>
-                  <Card.Body>
-                    <Row className="justify-content-center align-items-center">
-                      <Col xs="5" className="d-flex justify-content-center">
-                        <div className="icon-big text-center icon-warning" style={{ fontSize: "3rem" }}>
-                          <i className="nc-icon nc-money-coins text-warning"></i>
-                        </div>
-                      </Col>
-                      <Col xs="7">
-                        <div className="credito">
-                          <p className="card-category mb-1">CRÉDITO</p>
-                          <Card.Title as="h4" className="mt-0">APTO</Card.Title>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card> 
               </Card.Body>
               <hr></hr>
               <div className="button-container mr-auto ml-auto">
