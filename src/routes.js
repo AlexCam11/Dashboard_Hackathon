@@ -42,7 +42,7 @@ const dashboardRoutes = [
   {
     path: "/table",
     name: "Productos",
-    icon: "nc-icon nc-notes",
+    icon: "nc-icon nc-app",
     component: TableList,
     layout: "/admin"
   },
