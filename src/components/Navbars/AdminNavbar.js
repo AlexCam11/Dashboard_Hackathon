@@ -15,14 +15,16 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
+import { Navbar, Container, Nav, Dropdown, Button, Form, FormControl } from "react-bootstrap";
 
 import routes from "routes.js";
 
 function Header() {
   const location = useLocation();
+  const [searchQuery, setSearchQuery] = useState("");
+
   const mobileSidebarToggle = (e) => {
     e.preventDefault();
     document.documentElement.classList.toggle("nav-open");
@@ -43,6 +45,17 @@ function Header() {
     }
     return "Brand";
   };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    // Aquí puedes agregar la lógica de búsqueda, por ejemplo, enviar la consulta a una API o filtrar una lista
+    console.log("Búsqueda:", searchQuery);
+  };
+
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -120,14 +133,19 @@ function Header() {
               </Dropdown.Menu>
             </Dropdown>
             <Nav.Item>
-              <Nav.Link
-                className="m-0"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="nc-icon nc-zoom-split"></i>
-                <span className="d-lg-block"> Buscar</span>
-              </Nav.Link>
+              <Form inline onSubmit={handleSearchSubmit} className="d-flex">
+                <FormControl
+                  type="text"
+                  placeholder="Buscar"
+                  className="mr-sm-2"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  style={{ width: "400px", height: "30px", marginTop: "15px"}}
+                />
+                <Button variant="outline-success" type="submit"style={{ height: "30px", lineHeight: "0.9", marginTop: "15px" }}>
+                  <i className="nc-icon nc-zoom-split"style={{marginTop: "0px" }}></i>
+                </Button>
+              </Form>
             </Nav.Item>
           </Nav>
           <Nav className="ml-auto" navbar>
@@ -203,3 +221,5 @@ function Header() {
 }
 
 export default Header;
+
+
